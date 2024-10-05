@@ -149,7 +149,7 @@ services:
       - "traefik.http.routers.taiga.entrypoints=websecure"
       - "traefik.http.routers.taiga.rule=Host(`tracker.yoska.in`)"
       - "traefik.http.routers.taiga.tls.certresolver=lets-encrypt"
-      - "traefik.http.services.taiga.loadbalancer.server.port=9000"
+      - "traefik.http.services.taiga.loadbalancer.server.port=80"
     volumes:
       - ./taiga-gateway/taiga.conf:/etc/nginx/conf.d/default.conf
       - taiga-static-data:/taiga/static
