@@ -53,7 +53,7 @@ services:
       - taiga
 
   taiga-back:
-    image: taigaio/taiga-back:latest
+    image: yoska-taiga-back:latest
     environment: *default-back-environment
     volumes: *default-back-volumes
     networks:
